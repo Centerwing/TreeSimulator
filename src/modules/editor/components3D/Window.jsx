@@ -44,7 +44,7 @@ class Window extends React.Component {
                         cast: true,
                     }}
                     material={{
-                        color: (this.props.notAllowed || this.props.willSelected) ? 0xff0000 : 0x26A69A,
+                        color: (this.props.notAllowed || this.props.willSelected) ? 0x0288d1 : 0x8d6e63,
                         transparent: this.props.isGhost,
                         opacity: (this.props.isGhost) ? 0.5 : 1,
                     }}
@@ -66,7 +66,7 @@ class Window extends React.Component {
                     }}
                     material={{
                         transparent: true,
-                        color: (this.props.notAllowed || this.props.willSelected) ? 0xff0000 : 0xCFD8DC,
+                        color: (this.props.notAllowed || this.props.willSelected) ? 0x0288d1 : 0xCFD8DC,
                         opacity: 0.2,
                     }}
                     position={new THREE.Vector3(0, 10, 5)}
@@ -86,7 +86,7 @@ class Window extends React.Component {
                         cast: true,
                     }}
                     material={{
-                        color: (this.props.notAllowed || this.props.willSelected) ? 0xff0000 : 0x26A69A,
+                        color: (this.props.notAllowed || this.props.willSelected) ? 0x0288d1 : 0x8d6e63,
                         transparent: this.props.isGhost,
                         opacity: (this.props.isGhost) ? 0.5 : 1,
                     }}

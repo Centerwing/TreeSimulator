@@ -8,6 +8,7 @@ import {
     exitAddingMode,
     exitEditingMode,
 } from '../../../actions/editor';
+import { THREE } from 'aframe';
 
 type Props = {
     width: number,

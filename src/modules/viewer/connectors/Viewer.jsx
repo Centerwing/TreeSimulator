@@ -8,6 +8,7 @@ import {
 import Environment from '../../editor/components/environment';
 import SunLight from '../../editor/components/sunLight';
 import AmbientLight from '../../editor/components/ambientLight';
+import Grid from '../../editor/components/grid';
 
 class Viewer extends React.Component {
     constructor(props) {
@@ -20,9 +21,11 @@ class Viewer extends React.Component {
     onCanvasReady(event) {
         this.canvas = event.target.canvas;
         this.camera = event.target.camera;
+        event.target.renderer.setClearColor(0xb3e5fc, 0.7);
         this.setState({
             canvasRef: this.canvas,
         });
+        
     }
     render() {
         return (
@@ -41,6 +44,7 @@ class Viewer extends React.Component {
                         'render-target-loaded': this.onCanvasReady,
                     }}
                 >
+                    <Grid />
                     <Environment
                         isViewer
                         canvas={this.state.canvasRef}

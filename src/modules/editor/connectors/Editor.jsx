@@ -7,6 +7,9 @@ import {
     Row,
     Col,
 } from 'react-materialize';
+import {
+    Entity,
+} from 'aframe-react';
 
 import {
     getIsAddingMode,
@@ -27,15 +30,16 @@ import GhostObject from '../components/ghostObject';
 import SunLight from '../components/sunLight';
 import AmbientLight from '../components/AmbientLight';
 import Environment from '../components/environment';
+//import SkyBox from '../components/skybox';
 
 type Props = {
     isAddingMode: boolean,
     isEditMode: boolean,
-    currentObject: Object, // eslint-disable-line
-    objects: Array<Object>,// eslint-disable-line
-    editObject:() => void,// eslint-disable-line
-    deleteObject:() => void,// eslint-disable-line
-    exitEditingMode:() => void,// eslint-disable-line
+    currentObject: Object, 
+    objects: Array<Object>,
+    editObject:() => void,
+    deleteObject:() => void,
+    exitEditingMode:() => void,
 };
 
 @connect(

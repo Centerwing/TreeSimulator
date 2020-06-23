@@ -1,4 +1,3 @@
-// flow
 import * as THREE from 'three';
 
 export default (event: Event, canvas: Node) => {

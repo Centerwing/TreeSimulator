@@ -15,7 +15,7 @@ class SunLight extends React.Component {
                 light={{
                     type: 'directional',
                     color: 0xccbbaa,
-                    intensity: 0.9,
+                    intensity: 0.7,
                     castShadow: true,
                     shadowCameraVisible: false,
                     shadowMapWidth: 2048,
@@ -43,6 +43,7 @@ class SunLight extends React.Component {
                         z: 0,
                     }}
                 />
+                
             </ Entity>
         );
     }

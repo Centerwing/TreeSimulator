@@ -44,7 +44,7 @@ class Floor extends React.Component {
                     cast: true,
                 }}
                 material={{
-                    color: (this.props.notAllowed || this.props.willSelected) ? 0xff0000 : 0xCFD8DC,
+                    color: (this.props.notAllowed || this.props.willSelected) ? 0x0288d1 : 0x3e2723,
                     transparent: this.props.isGhost,
                     opacity: (this.props.isGhost) ? 0.5 : 1,
                 }}

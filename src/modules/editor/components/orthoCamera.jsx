@@ -14,8 +14,8 @@ import {
 type Props = {
     width: number,
     height: number,
-    isAddingMode: boolean, // eslint-disable-line
-    isEditMode: boolean, // eslint-disable-line
+    isAddingMode: boolean,
+    isEditMode: boolean,
 };
 
 @connect(

@@ -1,5 +1,3 @@
-/* eslint-disable */
-/* global AFRAME */
 // import * as THREE from 'three';
 import BSP from 'three-js-csg';
 const ThreeBSP = BSP(THREE);

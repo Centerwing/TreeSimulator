@@ -9,16 +9,6 @@
     "build-dev": "webpack --config webpack.dev.config.js",
     "build-prod": "webpack -p --config webpack.prod.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kenta88/react-imago3d.git"
-  },
-  "author": "Alessio Di Crescenzo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kenta88/react-imago3d.git"
-  },
-  "homepage": "https://github.com/kenta88/react-imago3d.git",
   "babel": {
     "presets": [
       "es2015",

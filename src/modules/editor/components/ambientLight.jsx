@@ -1,3 +1,5 @@
+//环境光
+
 import React from 'react';
 import {
     Entity,
@@ -14,7 +16,7 @@ class AmbientLight extends React.Component {
                 light={{
                     type: 'ambient',
                     color: 0xccbbaa,
-                    intensity: 0.5,
+                    intensity: 0.3,
                 }}
             />
         );
