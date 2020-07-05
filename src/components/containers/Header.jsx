@@ -319,6 +319,24 @@ class Header extends React.Component {
                             primaryText="Floor"
                             secondaryText="Create a floor"
                         />
+                        <ListItem
+                            onClick={() => {
+                                this.onClick3dObject('TREE');
+                            }}
+                            leftAvatar={
+                                <Avatar
+                                    icon={
+                                        <FontAwesome
+                                            name="th"
+                                            size="2x"
+                                        />
+                                    }
+                                    backgroundColor={brown500}
+                                />
+                            }
+                            primaryText="Tree"
+                            secondaryText="Create a tree"
+                        />
                     </List>
                 </Drawer>
             </div>

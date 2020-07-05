@@ -1,9 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Miss } from 'react-router';
 import { Provider } from 'react-redux';
-// import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-// import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import EditorRoute from './modules/editor/routes';
 import ViewerRoute from './modules/viewer/routes';

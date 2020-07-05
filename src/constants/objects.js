@@ -38,4 +38,16 @@ export default {
             round: 10.0,
         },
     },
+    TREE: {
+        uuid: null,
+        type: 'TREE',
+        level: 0,
+        position: new THREE.Vector3(0, 1, 0),
+        rotation: new THREE.Vector3(0, 0, 0),
+        notAllowed: false,
+        step: {
+            size: 5.0,
+            round: 10.0,
+        },
+    },
 };

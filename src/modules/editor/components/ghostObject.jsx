@@ -271,6 +271,21 @@ class GhostObject extends React.Component {
                     />
                 );
             }
+            if (currentObject.type === 'TREE') {
+                return (
+                    <Wall
+                        uuid={currentObject.uuid}
+                        level={currentObject.level}
+                        position={currentObject.position}
+                        rotation={currentObject.rotation}
+                        _onRef={(item) => {
+                            this.ghost = item;
+                        }}
+                        notAllowed={currentObject.notAllowed}
+                        isGhost
+                    />
+                );
+            }
         }
         return null;
     }
