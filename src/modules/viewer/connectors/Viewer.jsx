@@ -9,6 +9,7 @@ import Environment from '../../editor/components/environment';
 import SunLight from '../../editor/components/sunLight';
 import AmbientLight from '../../editor/components/ambientLight';
 import Grid from '../../editor/components/grid';
+import Plane from '../../editor/components/plane';
 
 class Viewer extends React.Component {
     constructor(props) {
@@ -44,7 +45,7 @@ class Viewer extends React.Component {
                         'render-target-loaded': this.onCanvasReady,
                     }}
                 >
-                    <Grid />
+                    <Plane />
                     <Environment
                         isViewer
                         canvas={this.state.canvasRef}

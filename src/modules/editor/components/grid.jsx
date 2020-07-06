@@ -49,13 +49,10 @@ class Grid extends React.Component {
                     cast: false,
                 }}
                 material={{
-                    opacity: 1,
-                    transparent: false,
-                    src: "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1827426329,2848415270&fm=26&gp=0.jpg",
-                    repeat: '100 100',
-                    roughness: 1,
-                    metalness: 0,
-                    color: 0x696969,
+                    color: 0x000,
+                    opacity: 0.2,
+                    wireframe: true,
+                    transparent: true,
                 }}
                 position={{ x: 0, y: this.state.yPosition, z: 0 }}
                 rotation={{ x: -90, y: 0, z: 0 }}

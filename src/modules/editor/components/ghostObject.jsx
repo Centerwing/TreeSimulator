@@ -15,11 +15,12 @@ import {
     Floor,
     Window,
     Wall,
+    Tree,
 } from '../components3D';
 import getRelativeMouseCoords from '../helper/getRelativeMouseCoords';
 
 type Props = {
-    canvas: Object, // eslint-disable-line
+    canvas: Object,
     isAddingMode: boolean,
     currentObject: Object,
     addObject: (Object) => void,
@@ -170,7 +171,7 @@ class GhostObject extends React.Component {
         const currentObject = this.state.currentObject;
         if (currentObject && this.props.isAddingMode) {
             const currentDegree = currentObject.rotation.y;
-            const degreeY = (currentDegree > 0) ? 0 : 90;
+            const degreeY = currentDegree + 45;
             this.setState({
                 currentObject: {
                     ...currentObject,
@@ -273,7 +274,7 @@ class GhostObject extends React.Component {
             }
             if (currentObject.type === 'TREE') {
                 return (
-                    <Wall
+                    <Tree
                         uuid={currentObject.uuid}
                         level={currentObject.level}
                         position={currentObject.position}

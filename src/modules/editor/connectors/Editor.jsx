@@ -30,6 +30,7 @@ import GhostObject from '../components/ghostObject';
 import SunLight from '../components/sunLight';
 import AmbientLight from '../components/AmbientLight';
 import Environment from '../components/environment';
+import Plane from '../components/plane';
 //import SkyBox from '../components/skybox';
 
 type Props = {
@@ -118,6 +119,7 @@ class Editor extends React.Component {
                                     onCanvasReady={this.onCanvasReady}
                                 >
                                     <Grid />
+                                    <Plane />
                                     <OrthoCamera
                                         width={width}
                                         height={height}

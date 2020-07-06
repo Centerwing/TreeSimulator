@@ -23,6 +23,7 @@ import {
     Floor,
     Window,
     Wall,
+    Tree,
 } from '../components3D';
 import getRelativeMouseCoords from '../helper/getRelativeMouseCoords';
 
@@ -171,6 +172,18 @@ class Environment extends React.Component {
                     if (object.type === 'WALL') {
                         return (
                             <Wall
+                                key={index}
+                                uuid={object.uuid}
+                                position={object.position}
+                                rotation={object.rotation}
+                                _onRef={this.onRefObj}
+                                willSelected={object.uuid === this.props.objectWillSelected}
+                            />
+                        );
+                    }
+                    if (object.type === 'TREE') {
+                        return (
+                            <Tree
                                 key={index}
                                 uuid={object.uuid}
                                 position={object.position}
